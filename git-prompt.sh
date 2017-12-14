@@ -279,6 +279,7 @@ set_shell_label() {
                 #               # tty="${WINDOW:+s}$WINDOW${WINDOW:+-}$tty"
                 #       tty="${WINDOW:+s}$WINDOW"  # replace tty name with screen number
                 tty="$WINDOW"  # replace tty name with screen number
+                tty=""  # don't show screen number - Artem tweak
         fi
 
         # we don't need tty name under X11
