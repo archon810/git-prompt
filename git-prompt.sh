@@ -338,9 +338,9 @@ set_shell_label() {
                 color_who_where="${id}${host:+$host_color$at$host}${tty:+ $tty}"
                 plain_who_where="${id}$at$host"
 
-                # add trailing " "
-                color_who_where="$color_who_where "
-                plain_who_where="$plain_who_where "
+                # add trailing " " Changed to ":" per OpenSUSE standard - Artem tweak
+                color_who_where="$color_who_where:"
+                plain_who_where="$plain_who_where:"
 
                 # if root then make it root_color
                 if [ "$id" == "root" ]  ; then
